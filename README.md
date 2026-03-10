@@ -112,7 +112,7 @@ server {
     }
 }
 ```
-<img width="920" height="485" alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
+<img alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
 
 
 

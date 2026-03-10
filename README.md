@@ -78,7 +78,7 @@ Configuración de Nginx (/etc/nginx/sites-available/default o un archivo de conf
 
 
 
-
+```
 server {
     listen 80;
     server_name your_domain.com;
@@ -111,7 +111,7 @@ server {
         proxy_read_timeout 86400s; # Aumentar el timeout para conexiones persistentes
     }
 }
-
+```
 <img width="920" height="485" alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
 
 

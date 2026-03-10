@@ -51,14 +51,14 @@ Implementación Técnica Detallada
 La instalación de Mythic C2 se realizó en una instancia EC2 de Ubuntu. Se utilizó Docker y Docker Compose para orquestar los contenedores de Mythic, garantizando un entorno aislado y escalable. La configuración inicial de Mythic se ajustó para escuchar en una dirección IP privada dentro de la VPC de AWS, lo que restringe el acceso directo desde internet y fuerza el uso del redirector.
 
 Comandos de Despliegue:
-
+```
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git docker.io docker-compose
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
 newgrp docker # Reiniciar la sesión o ejecutar 'su - $USER' para aplicar cambios
-
+```
 git clone https://github.com/its-a-feature/Mythic.git
 cd Mythic
 sudo ./install_docker_containers.sh

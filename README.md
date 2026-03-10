@@ -58,11 +58,11 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
 newgrp docker # Reiniciar la sesión o ejecutar 'su - $USER' para aplicar cambios
-```
+
 git clone https://github.com/its-a-feature/Mythic.git
 cd Mythic
 sudo ./install_docker_containers.sh
-
+```
 
 
 Una vez completada la instalación, se accede a la interfaz web de Mythic a través de la IP pública del servidor C2 (o un túnel SSH si se accede desde fuera de la VPC ) para configurar los C2 Profiles y generar los payloads.

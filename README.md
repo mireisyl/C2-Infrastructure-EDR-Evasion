@@ -67,7 +67,7 @@ sudo ./install_docker_containers.sh
 
 Una vez completada la instalación, se accede a la interfaz web de Mythic a través de la IP pública del servidor C2 (o un túnel SSH si se accede desde fuera de la VPC ) para configurar los C2 Profiles y generar los payloads.
 
-<img width="1028" height="536" alt="image" src="https://github.com/user-attachments/assets/d04188c5-6678-4fb5-a51e-302b07c318a7" />
+<img alt="image" src="https://github.com/user-attachments/assets/d04188c5-6678-4fb5-a51e-302b07c318a7" />
 
 
 2. Configuración del Servidor Redirector con Nginx (Ubuntu en AWS)

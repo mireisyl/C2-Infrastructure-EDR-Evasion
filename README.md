@@ -19,6 +19,7 @@ La infraestructura se desplegó en Amazon Web Services (AWS) para emular un esce
 
 •Alojamiento de la plataforma Mythic C2, un framework modular y extensible para la gestión de agentes, creación de payloads y perfiles de comunicación.
 •Centraliza el control sobre los sistemas comprometidos y coordina las acciones ofensivas.
+<img width="920" height="402" alt="image" src="https://github.com/user-attachments/assets/a9bc9594-f22b-43b5-94d9-b81b8eb11efb" />
 
 
 
@@ -106,7 +107,7 @@ server {
         proxy_set_header Connection "upgrade";
         proxy_read_timeout 86400s; # Aumentar el timeout para conexiones persistentes
     }
-}
+
 
 
 

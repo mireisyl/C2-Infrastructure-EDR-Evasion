@@ -84,11 +84,9 @@ server {
     server_name your_domain.com;
     return 301 https://$host$request_uri;
 }
-
 server {
     listen 443 ssl;
     server_name your_domain.com;
-
     ssl_certificate /etc/letsencrypt/live/your_domain.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/your_domain.com/privkey.pem;
 

@@ -84,9 +84,11 @@ server {
     server_name your_domain.com;
     return 301 https://$host$request_uri;
 }
+
 server {
     listen 443 ssl;
     server_name your_domain.com;
+
     ssl_certificate /etc/letsencrypt/live/your_domain.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/your_domain.com/privkey.pem;
 
@@ -109,6 +111,7 @@ server {
         proxy_read_timeout 86400s; # Aumentar el timeout para conexiones persistentes
     }
 }
+
 <img width="920" height="485" alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
 
 

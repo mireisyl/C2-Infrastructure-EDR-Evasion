@@ -76,7 +76,7 @@ El servidor redirector es un componente crítico para la ofuscación y la resili
 
 Configuración de Nginx (/etc/nginx/sites-available/default o un archivo de configuración específico):
 
-Plain Text
+
 
 
 server {
@@ -110,7 +110,7 @@ server {
         proxy_set_header Connection "upgrade";
         proxy_read_timeout 86400s; # Aumentar el timeout para conexiones persistentes
     }
-
+}
 <img width="920" height="485" alt="image" src="https://github.com/user-attachments/assets/efd89241-3ee9-4e9c-a8fc-e22fda8f92d2" />
 
 
